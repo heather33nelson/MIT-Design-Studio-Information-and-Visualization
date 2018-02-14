@@ -22,9 +22,9 @@ function rotate() {
   // Move registration point back to the top left corner of canvas
   ctx6.translate(-414, -736);
 	
-  ctx6.fillStyle = "rgba(255, 255, 0, 0.01)";
-  ctx6.fillRect(414/2, 414/2, 414, 736/2);
   ctx6.fillStyle = "rgba(255, 0, 0, 0.01)";
+  ctx6.fillRect(414/2, 414/2, 414, 736/2);
+  ctx6.fillStyle = "rgba(0, 0, 0, 0.01)";
   ctx6.fillRect(414/2, 414*2, 414, 736/2);
     
     //COMBINES THEM NICELY OFF THE SCREEN
@@ -40,4 +40,7 @@ function rotate() {
 //  ctx6.fillRect(414/2, 414*2, 414/2, 736/4);
 }
 
-setInterval(rotate, 100);
+rotate();
+//setTimeout(rotate, 1000);
+
+setInterval(rotate, 33);

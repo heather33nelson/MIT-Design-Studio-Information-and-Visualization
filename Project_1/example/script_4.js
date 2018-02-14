@@ -11,14 +11,6 @@ var tan = "#e6c083";
 var brown = "#643d00";
 var highlight = "#9b773c";
 
-//ctx4.fillStyle = "blue";
-//ctx4.fillRect(182, 382, 50, 50);
-//
-//ctx4.beginPath();
-//ctx4.arc(100,75,50,0,2*Math.PI);
-//ctx4.stroke();
-//ctx4.closePath();
-
 //COOKIE 1
 ctx4.beginPath();
 ctx4.fillStyle = tan;
@@ -65,6 +57,53 @@ chip(453,1200,9);
 //function eatme () {
 //    //adding white circles
 //}
+
+//HOURS
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(414,186,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(484,206,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(544,256,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(564,326,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
+
+//MINUTE 1
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(414,586,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(484,606,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
+//MINUTE 2
+ctx4.beginPath();
+ctx4.fillStyle = "white";
+ctx4.arc(414,986,40,0,2*Math.PI);
+ctx4.fill();
+ctx4.closePath();
+
 
 
 
