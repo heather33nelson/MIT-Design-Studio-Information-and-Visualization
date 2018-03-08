@@ -162,9 +162,19 @@ body {
     font-size: .8em;
 }
 
-#pp,#ppp{
+/*
+#cc,#ccc{
     position: relative;
     margin: auto;
     width: 600px;
+    height: 10px;
+    color: white;
+}
+*/
+#pp,#ppp{
+    position: relative;
+    margin: auto;
+    width: 500px;
     height: 100px;
 }
+
