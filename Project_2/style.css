@@ -2,8 +2,7 @@ body {
     padding: 50px;
 }
 
-
-#mobile1,#mobile2 {
+.mobile1,.mobile2 {
     width: 414px;
     height: 736px;
     border: 1px solid;
@@ -11,4 +10,161 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom:40px;
+    position:relative
+}
+
+.mobile1 img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.mobile1 p{
+    position: absolute;
+    bottom:575px;
+    right:25px;
+    z-index: 1;
+    font-size: 4.33em;
+    color: black;
+}
+
+#tempCanvas{
+    position: absolute;
+    left:40px;
+}
+
+#rainCanvas{
+    position: absolute;
+    left:160px;
+}
+
+#CIRCLE{
+    position: absolute;
+    left:240px;
+    bottom:120px;
+}
+
+#temperature{
+    position:absolute;
+    left:270px;
+    bottom:126px;
+    color:white;
+    z-index: 1;
+    font-size: 4.0em;
+    font-weight: 100;
+}
+
+#title {
+    position: absolute;
+    right:1px;
+    top:20px;
+    color:black;
+    font-weight: 100;
+    font-size: 2.0em;
+    letter-spacing: 6px;
+}
+
+#mass {
+    position: absolute;
+    right:1px;
+    top:65px;
+    color:black;
+    font-weight: 100;
+    font-size: 1.03em;
+    letter-spacing: 6px;
+}
+
+#day {
+    position: absolute;
+    right:1px;
+    top:100px;
+    font-weight: 800;
+    font-size: 1.4em;
+    letter-spacing: 6px;
+}
+
+#h0{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    font-weight:100;
+}
+
+#h12{
+    position: absolute;
+    left: 5px;
+    top: 177.5px;
+    font-weight:100;
+}
+
+#h24{
+    position: absolute;
+    left: 5px;
+    top: 355px;
+    font-weight:100;
+}
+
+#h36{
+    position: absolute;
+    left: 5px;
+    top: 532.5px;
+    font-weight:100;
+}
+
+#h48{
+    position: absolute;
+    left: 5px;
+    top: 710px;
+    font-weight:100;
+}
+
+#gradblue{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+
+#gradblack{
+    position: absolute;
+    right: 10px;
+    bottom: 75px; 
+}
+
+#highT{
+    position: absolute;
+    right: 170px;
+    bottom: 38px;
+    font-weight:100;
+    font-size: .8em;
+}
+
+#lowT{
+    position: absolute;
+    right: 10px;
+    bottom: 38px; 
+    font-weight:100;
+    font-size: .8em;
+}
+
+#highR{
+    position: absolute;
+    right: 165px;
+    bottom: -7px; 
+    font-weight:100;
+    font-size: .8em;
+}
+
+#lowR{
+    position: absolute;
+    right: 10px;
+    bottom: -7px; 
+    font-weight:100;
+    font-size: .8em;
+}
+
+#pp,#ppp{
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 100px;
 }

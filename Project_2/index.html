@@ -6,22 +6,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet"/>
 </head>
-<body>
+<body onload="load()" style="background-color:#000000;">
 <div class="container">
+    <p id = "top" style = "font-size: 2.0em; color: white; font-weight: 400">Project#2</p>
     <div class="row">
-        <h1 class="col-md-12">First Dashboard</h1>
-        <div id="mobile1">
+        <h1 class="col-md-12"style ="font-variant:small-caps; color: white; font-weight: 200";>Weather Woman</h1>
+        <div class="mobile1" style="background-color:white;">
+            <p id="temp"></p>
+            <div id = "skirt" ></div>
+            <img id = "image"/>
         </div>
+        <p id = "ppp" style = "font-size: 1em; color: white; font-weight: 100">This weather app tells its user the what it feels like outside by looking at the outfit the weather woman is wearing. For cold days, she puts on her fluffy blue jacket, for rainy days she dawns her rain jacket, for warm days, she wears a pink short sleeve shirt, and so on.</p>
     </div>
+    
     <br/>
+    
     <div class="row">
-        <h1 class="col-md-12">Second Dashboard</h1>
-        <div id="mobile2">
+        <h1 class="col-md-12"style ="font-variant:small-caps; color: white; font-weight: 200">Gradients of Weather</h1>
+        <div class="mobile2" style="background-color:white;">
+            <p id = "h0">0h</p>
+            <p id = "h12">12h</p>
+            <p id = "h24">24h</p>
+            <p id = "h36">36h</p>
+            <p id = "h48">48h</p>
+            <p id = "temperature"></p>
+            <p id = "title">cambridge</p>
+            <p id = "mass">massachusetts</p>
+            <p id = "day"></p>
+            <div id = "CIRCLE"></div>
+            <canvas id="tempCanvas" width="120" height="736" style="border:0px solid red">
+            </canvas>
+            <canvas id="rainCanvas" width="47" height="736" style="border:0px solid red">
+            </canvas>
+            <img id = "gradblue" src = "gradblue.png" width = "180" height = "15"/>
+            <img id = "gradblack" src = "gradblack.png" width = "180" height = "15"/>
+            <p id = "highT"></p>
+            <p id = "lowT"></p>
+            <p id = "highR"></p>
+            <p id = "lowR"></p>
         </div>
+        <p id = "pp" style = "font-size: 1em; color: white; font-weight: 100">This weather app shows the temperature and chance of rain for the next 48 hours. It takes that weather data and creates gradients using the highs and lows to scale the numbers. Written in the circle is the current apparent temperature and its corresponding color, allowing the user to conretely know the temperature and be able to compare the color to the rest.</p>
     </div>
 </div>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 <script src="script.js"></script>
 </body>
 </html>
