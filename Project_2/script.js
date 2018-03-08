@@ -18,6 +18,8 @@ var rains = [];
 //  }
 //})
 
+d3.json("../data/boston_weather.json",draw);
+
 function draw(error,data){
     ////////////////////////////////////////////////////// WEATHER WOMAN
     //console.log(data);
@@ -185,9 +187,9 @@ function draw(error,data){
 
 //FUNCTIONS____________________________________________
 
-function load(){
-    d3.json("../data/boston_weather.json",draw);
-}
+//function load(){
+//    d3.json("../data/boston_weather.json",draw);
+//}
 
 function outfit(){
     //console.log(icon);
