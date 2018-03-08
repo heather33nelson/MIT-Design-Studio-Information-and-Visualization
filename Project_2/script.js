@@ -18,7 +18,7 @@ var rains = [];
 //  }
 //})
 
-d3.json("../data/boston_weather.json",draw);
+d3.json("./data/boston_weather.json",draw);
 
 function draw(error,data){
     ////////////////////////////////////////////////////// WEATHER WOMAN
