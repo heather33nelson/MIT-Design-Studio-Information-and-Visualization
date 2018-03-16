@@ -46,7 +46,7 @@ function draw(error,data){
     
     if (elem.getContext) {
         var myRect = [];
-        var dy = 736/temps.length;
+        var dy = 716/temps.length;
         var R;
         var G;
         var B;
@@ -86,7 +86,7 @@ function draw(error,data){
     
     if (elem2.getContext){
         var myRectr = [];
-        var dy = 736/(rains.length);
+        var dy = 716/(rains.length);
         var Rr;
         var Gr;
         var Br;
@@ -136,43 +136,45 @@ function draw(error,data){
     
     var d = new Date();
     if (d.getDay() == 0){
-        document.getElementById("day").innerHTML = "SUNDAY";
+        document.getElementById("day").innerHTML = "Sunday";
     }
     if (d.getDay() == 1){
-        document.getElementById("day").innerHTML = "MONDAY";
+        document.getElementById("day").innerHTML = "Monday";
     }
     if (d.getDay() == 2){
-        document.getElementById("day").innerHTML = "TUESDAY";
+        document.getElementById("day").innerHTML = "Tuesday";
     }
     if (d.getDay() == 3){
-        document.getElementById("day").innerHTML = "WEDNESDAY";
+        document.getElementById("day").innerHTML = "Wednesday";
     }
     if (d.getDay() == 4){
-        document.getElementById("day").innerHTML = "THURSDAY";
+        document.getElementById("day").innerHTML = "Thursday";
     }
     if (d.getDay() == 5){
-        document.getElementById("day").innerHTML = "FRIDAY";
+        document.getElementById("day").innerHTML = "Friday";
     }
     if (d.getDay() == 6){
-        document.getElementById("day").innerHTML = "SATURDAY";
+        document.getElementById("day").innerHTML = "Saturday";
     }
     
     ////////////////////////////////////////////////////// CURRENT RAIN% FOR DATE
     
-    var currentR = data.currently.precipProbability;
-    var BR = 250 - 103*((currentR-minRain)/(maxRain-minRain));
-    var GR = (BR-152)/(103/255) - 5;;
-    var RR = GR;
-    RR = Math.abs(Math.round(RR));
-    GR = Math.abs(Math.round(GR));
-    BR = Math.abs(Math.round(BR));
-    RR = RR.toString();
-    GR = GR.toString();
-    BR = BR.toString();
-    colorfont = "rgb(" +RR+ "," +GR+ "," +BR+ ")";
-    console.log(RR,GR,BR);
-    document.getElementById("day").style = "color:" + colorfont;
+//    var currentR = data.currently.precipProbability;
+//    var BR = 250 - 103*((currentR-minRain)/(maxRain-minRain));
+//    var GR = (BR-152)/(103/255) - 5;;
+//    var RR = GR;
+//    RR = Math.abs(Math.round(RR));
+//    GR = Math.abs(Math.round(GR));
+//    BR = Math.abs(Math.round(BR));
+//    RR = RR.toString();
+//    GR = GR.toString();
+//    BR = BR.toString();
+//    colorfont = "rgb(" +RR+ "," +GR+ "," +BR+ ")";
+//    console.log(RR,GR,BR);
+//    document.getElementById("day").style = "color:" + colorfont;
     
+
+
     ////////////////////////////////////////////////////// KEY!
     
     
@@ -180,6 +182,27 @@ function draw(error,data){
     document.getElementById("lowT").innerHTML = Math.round(minTemp).toString()+ "°";
     document.getElementById("highR").innerHTML = (100*maxRain).toString()+ "%";
     document.getElementById("lowR").innerHTML = (100*minRain).toString()+ "%";
+    
+    ////////////////////////////////////////////////////// DATE!
+    
+    var dd = d.getDate();
+    var mm = d.getMonth()+1; //January is 0!
+    var yyyy = d.getFullYear();
+    
+    dd = dd.toString();
+    mm = mm.toString();
+    yyyy = yyyy.toString();
+
+    if(dd<10) {
+        dd = '0'+dd;
+    } 
+
+    if(mm<10) {
+        mm = '0'+mm;
+    } 
+
+    var today = mm + '/' + dd + '/' + yyyy;
+    document.getElementById("date").innerHTML = today;
 }
 
 
@@ -199,7 +222,7 @@ function outfit(){
     if (temp > 70){
         return "hot.svg"
     }
-    if (temp < 70 && temp > 50){
+    if (temp < 70 && temp >= 50){
         return "coldish.svg"
     } 
     if (temp < 50){

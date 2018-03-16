@@ -26,19 +26,20 @@
     <div class="row">
         <h1 class="col-md-12"style ="font-variant:small-caps; color: white; font-weight: 200">Gradients of Weather</h1>
         <div class="mobile2" style="background-color:white;">
-            <p id = "h0">0h</p>
-            <p id = "h12">12h</p>
-            <p id = "h24">24h</p>
-            <p id = "h36">36h</p>
-            <p id = "h48">48h</p>
+            <p id = "h0">NOW</p>
+            <p id = "h12">+12h</p>
+            <p id = "h24">+24h</p>
+            <p id = "h36">+36h</p>
+            <p id = "h48">+48h</p>
             <p id = "temperature"></p>
-            <p id = "title">cambridge</p>
-            <p id = "mass">massachusetts</p>
+            <p id = "title">Cambridge</p>
+            <p id = "mass">Massachusetts</p>
             <p id = "day"></p>
+            <p id = "date"></p>
             <div id = "CIRCLE"></div>
-            <canvas id="tempCanvas" width="120" height="736" style="border:0px solid red">
+            <canvas id="tempCanvas" width="111.33" height="716" style="border:0px solid red">
             </canvas>
-            <canvas id="rainCanvas" width="47" height="736" style="border:0px solid red">
+            <canvas id="rainCanvas" width="55.66" height="716" style="border:0px solid red">
             </canvas>
             <img id = "gradblue" src = "gradblue.png" width = "180" height = "15"/>
             <img id = "gradblack" src = "gradblack.png" width = "180" height = "15"/>
@@ -46,6 +47,8 @@
             <p id = "lowT"></p>
             <p id = "highR"></p>
             <p id = "lowR"></p>
+            <p id = "rainkey">% chance of rain</p>
+            <p id = "tempkey">temperature (F)</p>
         </div>
 <!--        <p id = "ccc" style = "font-variant: small-caps">Concept:</p>-->
         <p id = "pp" style = "font-size: 1em; color: white; font-weight: 100">This weather app shows the temperature and chance of rain for the next 48 hours. It takes that weather data and creates gradients using the highs and lows to scale the numbers. Written in the circle is the current apparent temperature and its corresponding color, allowing the user to conretely know the temperature and be able to compare the color to the rest.</p>

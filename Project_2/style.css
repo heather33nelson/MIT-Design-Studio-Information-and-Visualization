@@ -26,34 +26,78 @@ body {
     z-index: 1;
     font-size: 4.33em;
     color: black;
+    font-family: "Gill Sans";
 }
 
 #tempCanvas{
     position: absolute;
     left:40px;
+    top: 10px;
 }
 
 #rainCanvas{
     position: absolute;
-    left:160px;
+    left:151px;
+    top:10px;
 }
 
 #CIRCLE{
     position: absolute;
     left:240px;
-    bottom:120px;
+    bottom:135px;
 }
 
 #temperature{
     position:absolute;
     left:270px;
-    bottom:126px;
+    bottom:141px;
     color:white;
     z-index: 1;
     font-size: 4.0em;
     font-weight: 100;
 }
 
+#title {
+    position: absolute;
+    left:217px;
+    top:5px;
+    color:black;
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+
+#mass {
+    position: absolute;
+    left:217px;
+    top:35px;
+    color:black;
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+
+#day {
+    position: absolute;
+    left:217px;
+    top:65px;
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    color:black;
+}
+
+#date {
+    position: absolute;
+    left:217px;
+    top:95px;
+    font-weight: 100;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    color:black;
+}
+
+/*
 #title {
     position: absolute;
     right:1px;
@@ -82,84 +126,90 @@ body {
     font-size: 1.4em;
     letter-spacing: 6px;
 }
+*/
 
 #h0{
     position: absolute;
-    left: 5px;
-    top: 0px;
+    left: 10px;
+    top: 9px;
     font-weight:100;
+    font-size: .7em;
 }
 
 #h12{
     position: absolute;
-    left: 5px;
-    top: 177.5px;
+    left: 10px;
+    top: 184px;
     font-weight:100;
+    font-size: .7em;
 }
 
 #h24{
     position: absolute;
-    left: 5px;
-    top: 355px;
+    left: 10px;
+    top: 359px;
     font-weight:100;
+    font-size: .7em;
 }
 
 #h36{
     position: absolute;
-    left: 5px;
-    top: 532.5px;
+    left: 10px;
+    top: 534px;
     font-weight:100;
+    font-size: .7em;
 }
 
 #h48{
     position: absolute;
-    left: 5px;
-    top: 710px;
+    left: 10px;
+    top: 709px;
     font-weight:100;
+    font-size: .7em;
 }
 
 #gradblue{
     position: absolute;
-    right: 10px;
-    bottom: 30px;
+    left: 217px;
+    bottom: 25px;
 }
 
 #gradblack{
     position: absolute;
-    right: 10px;
-    bottom: 75px; 
+    left: 217px;
+    bottom: 83px; 
 }
 
 #highT{
     position: absolute;
-    right: 170px;
-    bottom: 38px;
+    left: 217px;
+    bottom: 48px;
     font-weight:100;
-    font-size: .8em;
+    font-size: .7em;
 }
 
 #lowT{
     position: absolute;
     right: 10px;
-    bottom: 38px; 
+    bottom: 48px; 
     font-weight:100;
-    font-size: .8em;
+    font-size: .7em;
 }
 
 #highR{
     position: absolute;
-    right: 165px;
-    bottom: -7px; 
+    left: 217px;
+    bottom: -10px; 
     font-weight:100;
-    font-size: .8em;
+    font-size: .7em;
 }
 
 #lowR{
     position: absolute;
     right: 10px;
-    bottom: -7px; 
+    bottom: -10px; 
     font-weight:100;
-    font-size: .8em;
+    font-size: .7em;
 }
 
 /*
@@ -171,10 +221,25 @@ body {
     color: white;
 }
 */
+
 #pp,#ppp{
     position: relative;
     margin: auto;
     width: 500px;
     height: 100px;
+}
+
+#rainkey{
+    position: absolute;
+    left: 217px;
+    bottom: 25px;
+    font-size: .7em;  
+}
+
+#tempkey{
+    position: absolute;
+    left: 217px;
+    bottom: 83px;
+    font-size: .7em;  
 }
 
